@@ -7,7 +7,7 @@ import paddle.nn as nn
 import paddle.nn.functional as F
 from GEM.baseline_model import ADMET
 import random
-from GEM.until import get_data_loader
+from GEM.until_fold import get_data_loader
 from sklearn.metrics import average_precision_score, roc_auc_score, accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 def trial(model_version, model, batch_size, criterion, scheduler, opt):
